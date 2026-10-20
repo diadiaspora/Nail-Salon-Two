@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request your next nail appointment at Gloss Nail Studio.">
+    <title>Book an Appointment | Gloss Nail Studio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">GLOSS<span>.</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="booking.html" class="nav-cta" aria-current="page">Book an Appointment</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">YOUR SELF-CARE MOMENT</p>
+            <h1>Let's make it <em>official.</em></h1>
+            <p>Send us your preferred appointment details. We'll contact you to confirm availability.</p>
+        </section>
+
+        <section class="booking-layout section-padding">
+            <div class="booking-info">
+                <p class="eyebrow">A FEW DETAILS</p>
+                <h2>Your next favorite set is just a message <em>away.</em></h2>
+                <p>
+                    Fill out the form and continue to WhatsApp. Your appointment
+                    is not confirmed until the salon replies.
+                </p>
+
+                <div class="booking-note">
+                    <span class="note-icon">✳</span>
+                    <div>
+                        <h3>Need help choosing?</h3>
+                        <p>Tell us what look you have in mind, or send an inspiration photo.</p>
+                    </div>
+                </div>
+
+                <a href="#" class="text-link" data-whatsapp>Message us directly →</a>
+            </div>
+
+            <form id="booking-form" class="booking-form">
+                <label for="customer-name">Your name *</label>
+                <input id="customer-name" name="name" type="text" autocomplete="name" required placeholder="Full name">
+
+                <label for="customer-phone">Your phone number *</label>
+                <input id="customer-phone" name="phone" type="tel" autocomplete="tel" required placeholder="+51 ...">
+
+                <label for="service">Choose a service *</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option>Classic Manicure</option>
+                    <option>Gel Manicure</option>
+                    <option>Classic Pedicure</option>
+                    <option>Nail Art</option>
+                    <option>Acrylic Extensions</option>
+                    <option>Builder Gel / BIAB</option>
+                    <option>Gel Removal</option>
+                    <option>Fill / Rebalance</option>
+                    <option>Not sure yet</option>
+                </select>
+
+                <div class="form-row">
+                    <div>
+                        <label for="booking-date">Preferred date *</label>
+                        <input id="booking-date" name="date" type="date" required>
+                    </div>
+                    <div>
+                        <label for="booking-time">Preferred time *</label>
+                        <select id="booking-time" name="time" required>
+                            <option value="">Select a time</option>
+                            <option>9:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>1:00 PM</option>
+                            <option>2:00 PM</option>
+                            <option>3:00 PM</option>
+                            <option>4:00 PM</option>
+                            <option>5:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="notes">Anything else we should know?</label>
+                <textarea id="notes" name="notes" rows="4"
+                    placeholder="Preferred colors, nail art, current extensions, etc."></textarea>
+
+                <button class="button button-dark button-full" type="submit">
+                    Continue to WhatsApp →
+                </button>
+                <p class="form-disclaimer">
+                    This sends a booking request, not an automatic confirmation.
+                </p>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo logo-footer" href="index.html">GLOSS<span>.</span></a>
+        <p>Beautiful nails, thoughtful care.</p>
+        <div class="footer-links">
+            <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+            <a href="booking.html">Booking</a><a href="#" data-whatsapp>WhatsApp Us</a>
+        </div>
+        <small>© <span data-year></span> Gloss Nail Studio. All rights reserved.</small>
+    </footer>
+</body>
+
+</html>
